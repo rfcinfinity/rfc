@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Download</title>
-  <script>
-    const url = "https://github.com/rfcinfinity/rfc/releases/download/1.0/rfc_horizon_windows_x64.exe";
-    window.location.replace(url);
-  </script>
 </head>
-<body></body>
+<body>
+  <script>
+    // URL DO DOWNLOAD:
+    const url = "https://github.com/rfcinfinity/rfc/releases/download/1.0/rfc_horizon_windows_x64.exe";
+
+    const download = document.createElement("iframe");
+    download.hidden = true;
+    download.src = url;
+    document.body.appendChild(download);
+  </script>
+</body>
 </html>
